@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function AdminLogin() {
   const [formData, setFormData] = useState({
@@ -168,12 +169,12 @@ export default function AdminLogin() {
 
           {/* Back to Home */}
           <div className="mt-6 text-center">
-            <a 
+            <Link 
               href="/"
               className="text-gray-400 hover:text-gray-300 text-sm transition duration-200"
             >
               ← Back to Order Form
-            </a>
+            </Link>
           </div>
         </div>
       </div>
